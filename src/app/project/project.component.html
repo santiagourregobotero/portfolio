@@ -1,0 +1,39 @@
+<div class="main">
+  <app-detail #detail_dlg></app-detail>
+  <app-filter-bar
+    [filter_list]="filter_list"
+    [current_count]="filtered_projects.length"
+    [total]="projects.length"
+    (currentChanged)="filterChanged($event)"
+  ></app-filter-bar>
+  <div class="project-list">
+    <ng-container *ngFor="let project of filtered_projects; let i = index">
+      <app-project-container
+        [data]="project"
+        title="{{ project.title }}"
+        (detail)="detail(i)"
+      ></app-project-container>
+      <!--
+      <app-project-container title="{{ project.title }}" (detail)="detail(i)">
+        <div class="image">
+          <img src="{{ project.images[0] }}" />
+        </div>
+        <div class="content">
+          <div class="info" [innerHTML]="project.shortDescription()"></div>
+          <div class="footer">
+            <div class="extra">
+              <div class="technology-label">Technology:</div>
+              <div class="technology">{{ project.technology }}</div>
+              <div class="client-label">Client:</div>
+              <div class="client">
+                {{ project.client }}
+              </div>
+            </div>
+            <div class="date">{{ project.date }}</div>
+          </div>
+        </div>
+      </app-project-container>
+      -->
+    </ng-container>
+  </div>
+</div>

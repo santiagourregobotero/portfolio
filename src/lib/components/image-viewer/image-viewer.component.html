@@ -1,0 +1,12 @@
+<div class="main">
+  <img class="subject" src="{{ ImageList[CurrentIndex] }}" />
+
+  <ul class="nav">
+    <ng-container *ngFor="let item of this.ImageList; let i = index">
+      <li
+        (click)="SetCurrent(i)"
+        [class]="CurrentIndex == i ? 'active' : ''"
+      ></li>
+    </ng-container>
+  </ul>
+</div>

@@ -1,0 +1,13 @@
+<div class="main">
+  <app-content-container title="about" class="about">
+    <div [innerHTML]="aboutContent"></div>
+  </app-content-container>
+
+  <app-content-container title="skill" class="skill">
+    <markdown [data]="skillContent"></markdown>
+  </app-content-container>
+
+  <app-content-container title="education" class="education">
+    <markdown [data]="educationContent"></markdown>
+  </app-content-container>
+</div>

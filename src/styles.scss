@@ -1,0 +1,63 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: #000;
+}
+
+body {
+  font-family: "Roboto";
+  line-height: 48px;
+  font-size: 24px;
+
+  overflow-y: scroll;
+}
+
+body * {
+  transition: width 0.1s, height 0.1s, font-size 0.1s, margin 0.1s, left 0.1s,
+    top 0.05s;
+}
+
+@media only screen and (max-width: 1400px) {
+  body {
+    line-height: 34px;
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  body {
+    line-height: 30px;
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    line-height: 26px;
+    font-size: 14px;
+  }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 999px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+  border-radius: 999px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 999px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}

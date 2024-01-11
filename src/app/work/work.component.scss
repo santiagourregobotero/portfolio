@@ -1,0 +1,54 @@
+.main {
+  margin: 100px 120px;
+  display: flex;
+}
+
+.spacer {
+  margin-top: 30px;
+  border-left: 1px dashed #333;
+  flex: 1;
+}
+
+.work {
+  margin-right: 30px;
+  display: flex;
+  row-gap: 80px;
+  flex-direction: column;
+
+  li {
+    list-style: disc;
+    line-height: 42px;
+    padding-left: 20px;
+    margin-left: 60px;
+    color: #444;
+    padding-bottom: 32px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .main {
+    margin: 0px 60px;
+  }
+  .work li {
+    line-height: 40px;
+    margin-left: 60px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .main {
+    margin: 0px 50px;
+  }
+  .work li {
+    line-height: 30px;
+    margin-left: 40px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    margin: 0px 30px;
+  }
+  .work li {
+    line-height: 20px;
+    margin-left: 30px;
+  }
+}

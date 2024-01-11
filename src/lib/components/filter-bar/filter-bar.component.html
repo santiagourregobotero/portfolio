@@ -1,0 +1,12 @@
+<div class="filter">
+  <div class="list">
+    <ng-container *ngFor="let item of filter_list; let i = index">
+      <button (click)="set_current(i)">
+        <span class="{{ current_index == i ? 'active' : '' }}">{{
+          filter_list[i]
+        }}</span>
+      </button>
+    </ng-container>
+  </div>
+  <span class="nav">{{ current_count }} &nbsp;|&nbsp; {{ total }}</span>
+</div>

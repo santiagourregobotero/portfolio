@@ -1,0 +1,91 @@
+.filter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: center;
+  background-color: white;
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    max-width: 100%;
+    height: 100%;
+    gap: 20px 40px;
+    padding: 5px 30px 5px;
+
+    &::-webkit-scrollbar {
+      height: 2px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #eee;
+    }
+    span {
+      border: 1px solid #666;
+      font-size: 24px;
+      line-height: 48px;
+      color: #666;
+      padding: 0px 25px;
+      border-radius: 99px;
+      display: block;
+      transition: all 0.2s;
+    }
+
+    span.active {
+      background-color: #666;
+      color: white;
+    }
+  }
+
+  .nav {
+    margin-top: 15px;
+    border-bottom: 1px solid #666;
+    padding: 5px 30px;
+    font-size: 24px;
+    line-height: 32px;
+    color: #666;
+    font-weight: lighter;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .list span {
+    font-size: 18px !important;
+  }
+  .nav {
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  span {
+    font-size: 16px !important;
+  }
+  .nav {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  span {
+    font-size: 16px !important;
+  }
+  .nav {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  span {
+    font-size: 6px !important;
+  }
+  .nav {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}

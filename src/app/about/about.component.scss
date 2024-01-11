@@ -1,0 +1,99 @@
+.main {
+  font-weight: lighter;
+  color: #222;
+
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.highlight {
+  color: red;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.section {
+  margin-top: 50px;
+}
+
+::ng-deep .about {
+  & > div {
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  p {
+    font-family: "Roboto";
+    font-size: 28px;
+    line-height: 64px;
+    letter-spacing: 0px;
+    word-wrap: break-word;
+    font-weight: 100;
+    color: #767676;
+  }
+  strong {
+    color: #333;
+    font-weight: 600;
+  }
+}
+
+::ng-deep .skill {
+  & > div {
+    background-color: #eee6;
+    margin-top: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    row-gap: 20px;
+  }
+}
+
+::ng-deep .education {
+  & > div {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  p,
+  ol {
+    margin-bottom: 20px;
+  }
+  ol {
+    list-style: unset;
+    list-style-type: decimal;
+    margin-left: 40px;
+  }
+  strong {
+    color: #333;
+    font-weight: 900;
+    font-size: 32px;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .main {
+    gap: 60px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .main {
+    margin-left: 5%;
+    margin-right: 5%;
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    margin-left: 0;
+    margin-right: 0;
+    gap: 40px;
+  }
+}

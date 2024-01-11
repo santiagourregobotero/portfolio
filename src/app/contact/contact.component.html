@@ -1,0 +1,52 @@
+<div class="main">
+  <app-content-container title="Contact me">
+    <input #email class="email" type="text" placeholder="Email" />
+    <div class="message">
+      <textarea #message placeholder="Please Leave Message"></textarea>
+    </div>
+  </app-content-container>
+  <div class="btn_container">
+    <button class="btn_contact" (click)="handleContact()">Send Message</button>
+  </div>
+  <ul class="link">
+    <li *ngIf="this.links['github'] && this.links['github']!.length != 0">
+      <a href="{{ this.links['github'] }}"><img src="assets/github.svg" /></a>
+    </li>
+    <li
+      *ngIf="
+        this.links['stackoverflow'] && this.links['stackoverflow']!.length != 0
+      "
+    >
+      <a href="{{ this.links['stackoverflow'] }}"
+        ><img src="assets/stackoverflow.svg"
+      /></a>
+    </li>
+    <li *ngIf="this.links['mail'] && this.links['mail']!.length != 0">
+      <a href="{{ this.links['mail'] }}"><img src="assets/google.svg" /></a>
+    </li>
+    <li *ngIf="this.links['linkedin'] && this.links['linkedin']!.length != 0">
+      <a href="{{ this.links['linkedin'] }}"
+        ><img src="assets/linkedin.png"
+      /></a>
+    </li>
+    <li *ngIf="this.links['whatsapp'] && this.links['whatsapp']!.length != 0">
+      <a href="{{ this.links['whatsapp'] }}"
+        ><img src="assets/whatsapp.png"
+      /></a>
+    </li>
+    <li *ngIf="this.links['discord'] && this.links['discord']!.length != 0">
+      <a href="{{ this.links['discord'] }}"><img src="assets/discord.png" /></a>
+    </li>
+    <li *ngIf="this.links['phone'] && this.links['phone']!.length != 0">
+      <a href="{{ this.links['phone'] }}"><img src="assets/call.png" /></a>
+    </li>
+    <li *ngIf="this.links['skype'] && this.links['skype']!.length != 0">
+      <a href="{{ this.links['skype'] }}"><img src="assets/skype.png" /></a>
+    </li>
+    <li *ngIf="this.links['telegram'] && this.links['telegram']!.length != 0">
+      <a href="{{ this.links['telegram'] }}"
+        ><img src="assets/telegram.png"
+      /></a>
+    </li>
+  </ul>
+</div>

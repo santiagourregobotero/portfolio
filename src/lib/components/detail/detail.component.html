@@ -1,0 +1,52 @@
+<div class="dialog-container" *ngIf="visible">
+  <div class="blur" (click)="close()"></div>
+  <div class="content-container">
+    <div #content class="dialog-content">
+      <div class="main">
+        <div class="left">
+          <div class="header">
+            <div class="title">
+              <div>
+                <h2>{{ project.title }}</h2>
+              </div>
+            </div>
+
+            <ul class="link">
+              <ng-container *ngFor="let link of this.linkAssets; let i = index">
+                <li *ngIf="project.link[i].length != 0">
+                  <a target="_blank" href="{{ project.link[i] }}"
+                    ><img src="assets/{{ link }}"
+                  /></a>
+                </li>
+              </ng-container>
+            </ul>
+          </div>
+
+          <div class="content">
+            <app-info-container title="About">
+              <div
+                class="description"
+                [innerHTML]="project.detailDescription()"
+              ></div>
+            </app-info-container>
+            <app-info-container title="Technology" class="tech">
+              <p>{{ project.technology }}</p>
+            </app-info-container>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="w-full h-[500px]">
+            <app-image-viewer [ImageList]="project.images"></app-image-viewer>
+          </div>
+          <app-info-container title="Client" [style.flex]="1">
+            <p>{{ project.client }}</p>
+          </app-info-container>
+          <div class="footer">
+            <div class="period">{{ project.date }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

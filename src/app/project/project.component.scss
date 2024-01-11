@@ -1,0 +1,42 @@
+.main {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+@media only screen and (max-width: 1400px) {
+  .main {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .main {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .image img {
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  .content {
+    margin-top: 10px;
+    padding-left: 0px;
+  }
+  .project-list {
+    row-gap: 30px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

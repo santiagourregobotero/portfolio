@@ -1,0 +1,18 @@
+<div class="main">
+  <div class="spacer"></div>
+  <div class="work">
+    <ng-container *ngFor="let job of jobExperiences">
+      <app-work-container
+        role="{{ job.role }}"
+        company="{{ job.company }}"
+        period="{{ job.date }}"
+      >
+        <ng-container *ngFor="let exp of job.description">
+          <ul>
+            <li>{{ exp }}</li>
+          </ul>
+        </ng-container>
+      </app-work-container>
+    </ng-container>
+  </div>
+</div>

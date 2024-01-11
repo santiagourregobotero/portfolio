@@ -1,0 +1,36 @@
+<div class="main">
+  <div class="header">
+    <div class="upper">
+      <span class="title"
+        ><button (click)="on_detail()">{{ data.title }}</button></span
+      >
+      <!--
+      <span class="detail"
+      ><button (click)="on_detail()">More Detail >>></button></span
+    >
+    </div>
+    --></div>
+    <div class="content">
+      <div class="body">
+        <div class="info">
+          <div class="description">
+            {{ data.shortDescription() }}
+          </div>
+        </div>
+        <div class="footer">
+          <div class="extra">
+            <div class="label">Technology:</div>
+            <div class="data">{{ data.technology }}</div>
+            <div class="label">Client:</div>
+            <div class="data">{{ data.client }}</div>
+            <div class="label">Period:</div>
+            <div class="data">{{ data.date }}</div>
+          </div>
+        </div>
+      </div>
+      <div class="image">
+        <img src="{{ data.images[0] }}" />
+      </div>
+    </div>
+  </div>
+</div>
