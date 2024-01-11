@@ -142,8 +142,9 @@ export class ResumeService {
 
     // description
     let description = '';
-    doc.querySelectorAll('p, ul')!.forEach((item, index) => {
+    doc.querySelectorAll('p:not(li > p), ul')!.forEach((item, index) => {
       if (item.innerHTML.includes('<code>')) return;
+      console.log(item.outerHTML);
       description = description + item.outerHTML + '\n';
     });
 
