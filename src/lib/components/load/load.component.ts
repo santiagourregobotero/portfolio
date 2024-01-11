@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
-import { TitleStrategy } from '@angular/router';
 import { ResumeService } from '@lib/service/resume/resume.service';
-import { Observable, forkJoin, timer } from 'rxjs';
+import { forkJoin, timer } from 'rxjs';
 
-const NAME = ' WILLIAM HARRIS ';
+const NAME = ' Santiago Urrego Botero ';
 
 @Component({
   selector: 'app-load',
