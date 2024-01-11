@@ -68,7 +68,13 @@ export class ResumeService {
   ) {}
 
   init() {
-    const headers = new HttpHeaders().set('Cache-Control', 'no-cache');
+    // const headers = new HttpHeaders().set('Cache-Control', 'no-cache');
+    const headers = new Headers({
+      'Cache-Control':
+        'no-cache, no-store, must-revalidate, post-check=0, pre-check=0',
+      Pragma: 'no-cache',
+      Expires: '0',
+    });
     const Resume$ = this.http.get(`${AppConfig.resumeBaseUrl}/resume.md`, {
       responseType: 'text',
     });

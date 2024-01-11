@@ -6,7 +6,8 @@
     [total]="projects.length"
     (currentChanged)="filterChanged($event)"
   ></app-filter-bar>
-  <div class="project-list">
+  <div *ngIf="loaded == false">Loading...</div>
+  <div class="project-list" *ngIf="loaded == true">
     <ng-container *ngFor="let project of filtered_projects; let i = index">
       <app-project-container
         [data]="project"
@@ -20,7 +21,7 @@
         </div>
         <div class="content">
           <div class="info" [innerHTML]="project.shortDescription()"></div>
-          <div class="footer">
+          <div class="footer"> 
             <div class="extra">
               <div class="technology-label">Technology:</div>
               <div class="technology">{{ project.technology }}</div>

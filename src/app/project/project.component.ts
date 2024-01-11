@@ -8,6 +8,7 @@ import { DetailComponent } from '../../lib/components/detail/detail.component';
   styleUrls: ['./project.component.scss'],
 })
 export class ProjectComponent implements OnInit {
+  loaded = false;
   show_detail = false;
   projects: Project[] = [];
   filtered_projects: Project[] = [];
@@ -39,6 +40,7 @@ export class ProjectComponent implements OnInit {
   async load() {
     this.projects = await this.resumeService.getProject();
     this.filterChanged(0);
+    this.loaded = true;
   }
   /*
   parseList(data: string) {
