@@ -37,11 +37,17 @@ export class ContactComponent {
       email: email,
       message: message,
     };
-    this.httpClient
-      .post('https://formspree.io/f/xkndggqw', body)
-      .subscribe((response: any) => {
+    this.httpClient.post('https://formspree.io/f/xgegvoqz', body).subscribe(
+      (response: any) => {
         console.log('get response');
         console.log(response);
-      });
+        if (response && response.ok) {
+          alert('Message sent successfully');
+        }
+      },
+      (error) => {
+        console.log(error);
+      }
+    );
   }
 }

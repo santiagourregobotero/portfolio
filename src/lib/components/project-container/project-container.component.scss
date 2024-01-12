@@ -12,6 +12,13 @@
       font-weight: bold;
       text-transform: uppercase;
       padding-bottom: 5px;
+
+      button {
+        text-decoration: underline;
+        text-underline-offset: 10px;
+        line-height: 64px;
+        color: #222;
+      }
     }
     .detail {
       flex-grow: 1;
@@ -36,6 +43,7 @@
   max-height: 200px;
   overflow: hidden;
   text-overflow: ellipsis;
+  color: #444;
 }
 
 .body {

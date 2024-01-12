@@ -16,16 +16,15 @@ export class ProjectComponent implements OnInit {
     'All',
     'Mobile',
     'Web',
-    'Flutter',
-    'Android',
-    'iOS',
-    'Shopify',
+    'Desktop',
+    'React',
+    'Angular',
     'ASP.NET',
+    'Spring Boot',
     'SaaS',
-    'CRM',
-    'Django+React',
-    'Laravel+Vue',
-    'React Native',
+    'WordPress',
+    'Laravel',
+    'Business',
   ];
   @ViewChild('detail_dlg')
   detailRef!: DetailComponent;
