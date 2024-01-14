@@ -22,8 +22,9 @@ In summary, the Mostedge Agent Application, built with WPF, serves as a robust a
 | :--------------: | :-----------: |
 | C#, WPF, Service | United States |
 
-| App | Link |
-| :-: | :--: |
+|  App  |                                  Link                                  |
+| :---: | :--------------------------------------------------------------------: |
+| video | https://drive.google.com/file/d/1Y_9W7qqJKtK0odATuv9EUFya9W-8mICS/view |
 
 |              Images              |
 | :------------------------------: |

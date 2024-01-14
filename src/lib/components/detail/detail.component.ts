@@ -1,10 +1,10 @@
 import {
   Component,
-  EventEmitter,
-  Output,
   ElementRef,
-  ViewChild,
+  EventEmitter,
   OnInit,
+  Output,
+  ViewChild,
 } from '@angular/core';
 
 import { Project } from '@lib/service/resume/resume.service';
@@ -26,6 +26,7 @@ export class DetailComponent implements OnInit {
     'appstore.svg',
     'web.svg',
     'github.svg',
+    'video.png',
   ];
 
   ngOnInit(): void {}

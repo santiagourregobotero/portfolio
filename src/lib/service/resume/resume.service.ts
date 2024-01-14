@@ -194,7 +194,7 @@ export class ResumeService {
     let client = linkTable!.querySelectorAll('tr')[1].querySelectorAll('td')[1]!
       .innerHTML;
 
-    let links: string[] = ['', '', '', '']; //android, iOS, web, github
+    let links: string[] = ['', '', '', '', '']; //android, iOS, web, github
     let linkLength = infoTable!.querySelectorAll('tr').length;
     for (let i = 1; i < linkLength; i++) {
       let type = infoTable!.querySelectorAll('tr')[i].querySelectorAll('td')[0]!
@@ -214,6 +214,9 @@ export class ResumeService {
           break;
         case 'github':
           links[3] = link;
+          break;
+        case 'video':
+          links[4] = link;
           break;
       }
     }
