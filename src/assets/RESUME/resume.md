@@ -135,11 +135,11 @@ Santiago's depth of knowledge in WordPress is truly commendable. His understandi
 Moreover, Santiago's specialization in BuddyBoss is nothing short of exceptional. His proficiency in leveraging the full potential of the BuddyBoss platform for community and membership sites is unparalleled. From seamless integration of features to ensuring optimal performance, Santiago goes above and beyond to deliver solutions that exceed expectations. His knack for understanding the unique needs of each project and tailoring BuddyBoss functionalities accordingly has been a key factor in the success of our community-driven initiatives.
 ```
 
-|      Category | Data                                  |
-| ------------: | :------------------------------------ |
-|   Client Name | Yuva teja Pandranki                   |
-|  Client Intro | Student at University at Albany, SUNY |
-| Client Avatar | yuva.jpg                              |
+|      Category | Data                 |
+| ------------: | :------------------- |
+|   Client Name | Osman Hrnjica        |
+|  Client Intro | IT associate at Krka |
+| Client Avatar | osman.jpg            |
 
 ```
 I am pleased to extend my highest recommendation for Santiago, who has demonstrated exceptional performance on our recent project. Santiago's unwavering commitment to excellence, coupled with his ability to deliver within specified timeframes and budget constraints, has left an indelible mark on the success of our endeavor.
