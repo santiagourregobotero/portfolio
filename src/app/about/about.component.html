@@ -10,4 +10,13 @@
   <app-content-container title="education" class="education">
     <markdown [data]="educationContent"></markdown>
   </app-content-container>
+  <app-content-container title="recommendation" class="recommendation">
+    <ng-container
+      *ngFor="let recommendation of recommendation_list; let i = index"
+    >
+      <app-recommendation-container
+        [data]="recommendation"
+      ></app-recommendation-container>
+    </ng-container>
+  </app-content-container>
 </div>

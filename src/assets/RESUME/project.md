@@ -2,3 +2,5 @@
 - [Task Dent](project/taskdent.md)
 - [VPMMA](project/thevpmma.md)
 - [Global Communication Stars](project/globalcommstars.md)
+- [Mostedge Agent](project/mostedge_agent.md)
+- [MOSTEDGE](project/mostedge.md)

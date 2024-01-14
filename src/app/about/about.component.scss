@@ -59,8 +59,8 @@
   & > div {
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 0px;
+    padding-bottom: 30px;
   }
   p,
   ol {
@@ -75,6 +75,16 @@
     color: #333;
     font-weight: 900;
     font-size: 32px;
+  }
+}
+
+::ng-deep .recommendation {
+  & > div {
+    background-color: #eee6;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 

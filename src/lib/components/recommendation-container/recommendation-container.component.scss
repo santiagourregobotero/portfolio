@@ -1,0 +1,50 @@
+.main {
+  .header {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-bottom: 10px;
+  }
+  .name {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 6px;
+    font-weight: bold;
+  }
+  .intro {
+    font-size: 16px;
+    line-height: 18px;
+    color: #666;
+  }
+  .body {
+    padding-left: 60px;
+    font-style: italic;
+  }
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+.avatar {
+  position: relative;
+  width: 50px; /* Adjust the size as needed */
+  height: 50px; /* Maintain a square aspect ratio for a perfect circle */
+  background-color: #eee6; /* Background color for the circle */
+  border-radius: 50%; /* Creates a circular shape */
+  overflow: hidden; /* Ensures the content is clipped within the circle */
+}
+
+/* Optionally, you can add some styling to make it look more like an avatar */
+.avatar::before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* Maintain a square aspect ratio */
+}
+
+.avatar img {
+  width: 100%; /* Ensure the image takes up the full container */
+  height: auto; /* Maintain the image's aspect ratio */
+  border-radius: 50%; /* Clip the image to a circle */
+  object-fit: cover; /* Ensure the image covers the entire circle */
+  position: absolute;
+  translate: 0% -100%;
+}

@@ -4,11 +4,18 @@ import { AppConfig } from '@app/config';
 import { MarkdownService } from 'ngx-markdown';
 import { Subject, forkJoin } from 'rxjs';
 
-interface JobExperience {
+export interface JobExperience {
   role: string;
   company: string;
   date: string;
   description: string[];
+}
+
+export interface Recommendation {
+  client_name: string;
+  client_intro: string;
+  client_avatar: string;
+  recommend: string;
 }
 
 export class ProjectEntry {
@@ -97,9 +104,16 @@ export class ResumeService {
   private eventSubject = new Subject<string>();
 
   loadProjects() {
-    const headers = new HttpHeaders().set('Cache-Control', 'no-cache');
+    const headers = new HttpHeaders({
+      'Cache-Control':
+        'no-cache, no-store, must-revalidate, post-check=0, pre-check=0',
+      Pragma: 'no-cache',
+      Expires: '0',
+      'Access-Control-Allow-Origin': '*',
+    });
     const Project$ = this.http.get(`${AppConfig.resumeBaseUrl}/project.md`, {
       responseType: 'text',
+      headers: headers,
     });
     Project$.subscribe((data) => {
       this.projectList = this.parseProjectList(
@@ -241,6 +255,33 @@ export class ResumeService {
 
   getEducation() {
     return this.parseContent(this.resume, 'education', 'h2')[0];
+  }
+
+  getRecommendation() {
+    let content = this.parseContent(this.resume, 'recommendation', 'h2')[0];
+    const parser = new DOMParser();
+    const list: Recommendation[] = [];
+    for (let recommend of this.parseContent(content, '', 'table', true)) {
+      console.log('////////////////');
+      console.log(recommend);
+      const doc = parser.parseFromString(recommend, 'text/html');
+      const tableData = doc.querySelectorAll('td');
+      if (tableData.length < 6) continue;
+      const client_name = tableData[1].textContent;
+      const client_intro = tableData[3].textContent;
+      const client_avatar = tableData[5].textContent;
+      const data = doc.querySelector('code');
+
+      let new_recommend: Recommendation = {
+        client_name: client_name as string,
+        client_intro: client_intro as string,
+        client_avatar: client_avatar as string,
+        recommend: data?.innerHTML as string,
+      };
+      list.push(new_recommend);
+    }
+    console.log(list);
+    return list;
   }
 
   getExperience() {
