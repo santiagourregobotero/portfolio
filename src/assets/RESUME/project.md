@@ -4,3 +4,4 @@
 - [Global Communication Stars](project/globalcommstars.md)
 - [Mostedge Agent](project/mostedge_agent.md)
 - [MOSTEDGE](project/mostedge.md)
+- [The Workshop List](project/theworkshoplist.md)

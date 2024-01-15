@@ -2,7 +2,7 @@
 
 `10.2023 ~ 12.2023`
 
-VPMMA matches veterans & spouses with mentors and offers career development services at no cost. The VPMMA Board of Directors and its members are 100% volunteers dedicated to mission.
+VPMMA matches veterans and spouses with mentors and offers career development services at no cost. The VPMMA Board of Directors and its members are 100% volunteers dedicated to mission.
 
 As the lead developer tasked with enhancing the VPMMA website, my primary responsibilities included the integration of new features and the customization of existing pages. A comprehensive research initiative was undertaken to gain proficiency in the BuddyBoss Plugin, coupled with mastering the intricacies of Elementor for seamless front-end improvements.
 
