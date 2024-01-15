@@ -85,7 +85,7 @@ Bachelor's Degree of Computer Science
 
 #### With Your Tribe
 
-`06-2022 ~ 03.2013`
+`06-2022 ~ 03.2023`
 
 Developed and deployed a high-performance mobile application using React Native, resulting in a significant increase in user engagement and positive feedback from users.
 
