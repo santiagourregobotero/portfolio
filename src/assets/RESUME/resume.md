@@ -61,6 +61,24 @@ Bachelor's Degree of Computer Science
 
 ## Experience
 
+### Full-stack Web & Mobile Developer
+
+#### Freelancer
+
+`05-2017 ~ Present`
+
+- Specialized in backend development while actively collaborating with freelancers for intricate frontend tasks. This collaborative approach demonstrates a strategic utilization of resources and a focus on delivering comprehensive solutions to clients.
+
+- Developed proficiency in Django, leveraging it for various projects. This includes creating websites for the company, its clients, and deploying content management solutions.
+
+- Gained valuable practical experience in multiple facets of software development, enhancing skills in API development, integration, CI-CD workflows, Docker, and mobile application development using Flutter.
+
+- Specialized in backend development while actively collaborating with freelancers for intricate frontend tasks. This collaborative approach demonstrates a strategic utilization of resources and a focus on delivering comprehensive solutions to clients.
+
+- Developed proficiency in Django, leveraging it for various projects. This includes creating websites for the company, its clients, and deploying content management solutions.
+
+- Successfully deployed the Django-based web application on cPanel, AWS, Digial Ocean demonstrating practical knowledge of the deployment process and server management, contributing to a holistic understanding of the software development lifecycle.
+
 ### Full Stack Web & Mobile Lead Developer
 
 #### Ceras Health
@@ -85,29 +103,31 @@ Bachelor's Degree of Computer Science
 
 #### With Your Tribe
 
-`06-2017 ~ 03.2023`
+`06-2021 ~ 03.2023`
 
-Developed and deployed a high-performance mobile application using React Native, resulting in a significant increase in user engagement and positive feedback from users.
+- Developed and deployed a high-performance mobile application using React Native, resulting in a significant increase in user engagement and positive feedback from users.
 
-Implemented complex features and functionalities in React Native, such as real-time data synchronization, push notifications, and geolocation services, resulting in a more robust and feature-rich application.
+- Implemented complex features and functionalities in React Native, such as real-time data synchronization, push notifications, and geolocation services, resulting in a more robust and feature-rich application.
 
-Collaborated closely with designers, product managers, and stakeholders to gather requirements, provide technical insights, and deliver intuitive and visually appealing user interfaces using React Native.
+- Collaborated with senior developers in an agile setting, actively involved in the development of APIs using Nestjs. Successfully integrated these APIs with third-party platforms such as Firebase.
 
-Implemented push notification functionality in a React Native mobile application using popular libraries such as OneSignal, improving user engagement and retention.
+- Proficiently utilized Gitlab CI-CD workflows for seamless development and deployment processes. Acquired hands-on experience in containerization using Docker for efficient application deployment.
 
-Integrated push notification functionality with back-end APIs, enabling personalized and targeted notifications based on user preferences, behavior, and app events, increasing user interaction and conversion rates.
+- Contributed to the creation of a mobile application using Flutter, showcasing adaptability and versatility in diverse development environments.
 
-### Front-end Engineer
+### Front-End Engineer
 
 #### West Technologies, Ltd
 
 `08-2015 ~ 05.2017`
 
-Created a web app using Redux to extend the state management through the entire application.
+- Created a web app using Redux to extend the state management through the entire application.
 
-Developed a React Native app to provide a better experience within the Livework web app.
+- Developed a React Native app to provide a better experience within the Livework web app.
 
-Created a platform to manage access to the NY building remotely.
+- Created a platform to manage access to the NY building remotely.
+
+- Applied skills in Python development using the Wagtail Framework, a Content Management System (CMS), to create a dynamic website for a gaming company. Gained expertise in content management and web development using Python.
 
 ## Recommendation
 
